@@ -1,0 +1,3 @@
+/Users/isobolev/itmo-4course/distributed-computing/cmake-build-debug/CMakeFiles/distributed_computing.dir
+/Users/isobolev/itmo-4course/distributed-computing/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/isobolev/itmo-4course/distributed-computing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
