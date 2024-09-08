@@ -122,6 +122,7 @@ process_parent(int process_id, int pipes[11][11][2], int8_t child_count, int ch_
     };
     while (received_started != child_count) {
         receive_any(&pipeData, received);
+        char* test = received->s_payload;
         if (received->s_header.s_type == STARTED) {
             received_started++;
         }

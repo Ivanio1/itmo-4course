@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "distributed_computing",
+					"name" : "dlab1_fake",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "distributed_computing::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-distributed_computing-Debug-8e58880a8a83c009bb53.json",
-					"name" : "distributed_computing",
+					"id" : "dlab1_fake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dlab1_fake-Debug-59f868cc934148910343.json",
+					"name" : "dlab1_fake",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/isobolev/itmo-4course/distributed-computing/cmake-build-debug",
-		"source" : "/Users/isobolev/itmo-4course/distributed-computing"
+		"build" : "/home/egor/CLionProjects/dlab1_fake/cmake-build-debug",
+		"source" : "/home/egor/CLionProjects/dlab1_fake"
 	},
 	"version" : 
 	{
