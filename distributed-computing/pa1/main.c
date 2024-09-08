@@ -54,6 +54,8 @@ int process_child(int32_t process_id, int pipes[11][11][2], pid_t parent_pid, in
     char done_payload[100];
     snprintf(done_payload, 100, log_done_fmt, process_id);
     write_log_raw(events_fd, created_payload);
+    write_console_log_raw(created_payload);
+
     struct PipeData pipeData = {
             .process_id = process_id,
             .pipes = pipes,
@@ -76,7 +78,9 @@ int process_child(int32_t process_id, int pipes[11][11][2], pid_t parent_pid, in
         }
     }
     write_log(events_fd, log_received_all_started_fmt, process_id);
+    write_console_log(log_received_all_started_fmt, process_id);
     write_log_raw(events_fd, done_payload);
+    write_console_log_raw(done_payload);
     message = createMessage(DONE, done_payload);
     pipeData.last_read = 0;
     pipeData.process_id = process_id;
@@ -88,6 +92,8 @@ int process_child(int32_t process_id, int pipes[11][11][2], pid_t parent_pid, in
         }
     }
     write_log(events_fd, log_received_all_done_fmt, process_id);
+    write_console_log(log_received_all_done_fmt, process_id);
+
     free(received);
     for (int i = 0; i <= child_count; i++) {
         for (int j = 0; j <= child_count; j++) {
@@ -122,12 +128,12 @@ process_parent(int process_id, int pipes[11][11][2], int8_t child_count, int ch_
     };
     while (received_started != child_count) {
         receive_any(&pipeData, received);
-        char* test = received->s_payload;
         if (received->s_header.s_type == STARTED) {
             received_started++;
         }
     }
     write_log(events_fd, log_received_all_started_fmt, process_id);
+    write_console_log(log_received_all_started_fmt, process_id);
     pipeData.last_read = 0;
     while (received_completed != child_count) {
         receive_any(&pipeData, received);
@@ -136,6 +142,7 @@ process_parent(int process_id, int pipes[11][11][2], int8_t child_count, int ch_
         }
     }
     write_log(events_fd, log_received_all_done_fmt, process_id);
+    write_console_log(log_received_all_done_fmt, process_id);
     free(received);
     for (int i = 0; i <= child_count; i++) {
         for (int j = 0; j <= child_count; j++) {
