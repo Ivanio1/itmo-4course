@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="D05AFB3B-73D5-4f8b-8C05-9E385FB728BA" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-8D-30-A0" com_port="2000" bootmode="0" cx="266.000000" cy="312.000000" edit_left="293" edit_top="366">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="BC83C177-1EC2-49fc-B2A3-BA9486F76299" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-4C-0F-4B" com_port="2002" bootmode="0" cx="356.000000" cy="177.000000" edit_left="383" edit_top="231">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8A8B8E1A-1C62-4692-B8B3-2B7355138CA1" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-0F-3D-D8" com_port="2001" bootmode="0" cx="467.000000" cy="310.000000" edit_left="494" edit_top="364">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="D05AFB3B-73D5-4f8b-8C05-9E385FB728BA" destDeviceID="BC83C177-1EC2-49fc-B2A3-BA9486F76299">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="316.954041" srcBoundRect_Y="303.068939" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="359.045959" tarBoundRect_Y="239.931061" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="8A8B8E1A-1C62-4692-B8B3-2B7355138CA1" destDeviceID="D05AFB3B-73D5-4f8b-8C05-9E385FB728BA">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="450.818359" srcBoundRect_Y="337.429657" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="336.181641" tarBoundRect_Y="338.570343" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="8A8B8E1A-1C62-4692-B8B3-2B7355138CA1" destDeviceID="BC83C177-1EC2-49fc-B2A3-BA9486F76299">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="466.329926" srcBoundRect_Y="303.845764" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="410.670074" tarBoundRect_Y="237.154251" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="216" top="295" right="288" bottom="312" content="10.0.12.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="272" top="215" right="344" bottom="232" content="10.0.12.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="415" top="218" right="487" bottom="235" content="10.0.23.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="479" top="286" right="551" bottom="303" content="10.0.23.3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="318" top="360" right="390" bottom="377" content="10.0.13.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="408" top="363" right="480" bottom="380" content="10.0.13.3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
