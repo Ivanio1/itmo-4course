@@ -191,6 +191,7 @@ int main(int argc, char **argv) {
             }
             write_log(pipes_fd, "pipe %d process %d OPENED\n", pipe_tmp[0], process_id);
             write_log(pipes_fd, "pipe %d process %d OPENED\n", pipe_tmp[1], process_id);
+            write_console_log("pipe %d process %d OPENED\n", p1, p2);
             pipes[p1][p2][0] = pipe_tmp[0];
             pipes[p2][p1][1] = pipe_tmp[1];
         }
