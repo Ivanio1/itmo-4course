@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/egor/CLionProjects/dlab1_fake/cmake-build-debug",
-		"source" : "/home/egor/CLionProjects/dlab1_fake"
+		"build" : "/home/egor/itmo-4course/distributed-computing/cmake-build-debug",
+		"source" : "/home/egor/itmo-4course/distributed-computing"
 	},
 	"version" : 
 	{

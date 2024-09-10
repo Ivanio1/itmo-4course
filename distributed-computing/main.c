@@ -15,7 +15,7 @@ Message createMessage(int16_t type, const char* text) {
     Message message = {
             .s_header = {
                     .s_magic = MESSAGE_MAGIC,
-                    .s_payload_len =0,
+                    .s_payload_len = strlen(text),
                     .s_type = type,
             }
     };
@@ -48,13 +48,13 @@ void close_unused(int32_t process_id, int pipes[11][11][2], int8_t child_count, 
 
 int process_child(int32_t process_id, int pipes[11][11][2], pid_t parent_pid, int8_t child_count, int events_fd,
                   int pipes_fd) {
-    close_unused(process_id, pipes, child_count, pipes_fd);
     char created_payload[100];
     snprintf(created_payload, 100, log_started_fmt, process_id, getpid(), parent_pid);
     char done_payload[100];
     snprintf(done_payload, 100, log_done_fmt, process_id);
     write_log_raw(events_fd, created_payload);
     write_console_log_raw(created_payload);
+    close_unused(process_id, pipes, child_count, pipes_fd);
 
     struct PipeData pipeData = {
             .process_id = process_id,
@@ -191,7 +191,6 @@ int main(int argc, char **argv) {
             }
             write_log(pipes_fd, "pipe %d process %d OPENED\n", pipe_tmp[0], process_id);
             write_log(pipes_fd, "pipe %d process %d OPENED\n", pipe_tmp[1], process_id);
-            write_console_log("pipe %d process %d OPENED\n", p1, p2);
             pipes[p1][p2][0] = pipe_tmp[0];
             pipes[p2][p1][1] = pipe_tmp[1];
         }

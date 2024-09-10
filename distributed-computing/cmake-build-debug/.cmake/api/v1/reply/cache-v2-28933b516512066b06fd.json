@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/egor/CLionProjects/dlab1_fake/cmake-build-debug"
+			"value" : "/home/egor/itmo-4course/distributed-computing/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -415,7 +415,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/egor/CLionProjects/dlab1_fake/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/egor/itmo-4course/distributed-computing/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/egor/CLionProjects/dlab1_fake"
+			"value" : "/home/egor/itmo-4course/distributed-computing"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/egor/CLionProjects/dlab1_fake/cmake-build-debug"
+			"value" : "/home/egor/itmo-4course/distributed-computing/cmake-build-debug"
 		},
 		{
 			"name" : "dlab1_fake_IS_TOP_LEVEL",
@@ -1059,7 +1059,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/egor/CLionProjects/dlab1_fake"
+			"value" : "/home/egor/itmo-4course/distributed-computing"
 		}
 	],
 	"kind" : "cache",
