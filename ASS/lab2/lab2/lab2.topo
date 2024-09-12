@@ -33,8 +33,11 @@
     </lines>
     <shapes />
     <txttips>
-        <txttip left="547" top="243" right="642" bottom="260" content="10.0.23.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="302" top="238" right="397" bottom="255" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="419" top="380" right="514" bottom="397" content="10.0.13.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="561" top="277" right="633" bottom="294" content="10.0.23.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="253" top="280" right="325" bottom="297" content="10.0.12.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="367" top="391" right="439" bottom="408" content="10.0.13.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="337" top="153" right="409" bottom="170" content="10.0.12.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="498" top="148" right="570" bottom="165" content="10.0.23.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="524" top="400" right="596" bottom="417" content="10.0.13.3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
     </txttips>
 </topo>
