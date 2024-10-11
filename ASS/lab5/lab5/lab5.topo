@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UNICODE" ?>
 <topo version="1.3.00.100">
     <devices>
-        <dev id="128E1F2E-AE6E-409a-8362-99BDB31111AE" name="R3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A8-6E-C6" com_port="2002" bootmode="0" cx="554.000000" cy="248.000000" edit_left="581" edit_top="302">
+        <dev id="128E1F2E-AE6E-409a-8362-99BDB31111AE" name="R3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A8-6E-C6" com_port="2002" bootmode="0" cx="513.000000" cy="242.000000" edit_left="540" edit_top="296">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="772500D5-B000-4adc-8E2C-923C5C09075D" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A1-71-D8" com_port="2000" bootmode="0" cx="299.000000" cy="248.000000" edit_left="327" edit_top="302">
+        <dev id="772500D5-B000-4adc-8E2C-923C5C09075D" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A1-71-D8" com_port="2000" bootmode="0" cx="258.000000" cy="242.000000" edit_left="286" edit_top="296">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
             </slot>
         </dev>
-        <dev id="661DD40F-E988-490c-9841-5465E33AA9A3" name="R2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-EC-40-E5" com_port="2001" bootmode="0" cx="415.000000" cy="101.000000" edit_left="442" edit_top="155">
+        <dev id="661DD40F-E988-490c-9841-5465E33AA9A3" name="R2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-EC-40-E5" com_port="2001" bootmode="0" cx="374.000000" cy="95.000000" edit_left="401" edit_top="149">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="1" />
                 <interface sztype="Ethernet" interfacename="GE" count="2" />
@@ -22,18 +22,20 @@
     </devices>
     <lines>
         <line srcDeviceID="772500D5-B000-4adc-8E2C-923C5C09075D" destDeviceID="661DD40F-E988-490c-9841-5465E33AA9A3">
-            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="352.751099" srcBoundRect_Y="241.099899" srcOffset_X="0.000000" srcOffset_Y="4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="415.248901" tarBoundRect_Y="161.900101" tarOffset_X="-45.000000" tarOffset_Y="-25.000000" />
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="311.751099" srcBoundRect_Y="235.099899" srcOffset_X="0.000000" srcOffset_Y="4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="374.248901" tarBoundRect_Y="155.900101" tarOffset_X="-45.000000" tarOffset_Y="-25.000000" />
         </line>
         <line srcDeviceID="661DD40F-E988-490c-9841-5465E33AA9A3" destDeviceID="128E1F2E-AE6E-409a-8362-99BDB31111AE">
-            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="471.669800" srcBoundRect_Y="159.377396" srcOffset_X="2.000000" srcOffset_Y="-26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="551.330200" tarBoundRect_Y="243.622604" tarOffset_X="11.000000" tarOffset_Y="-11.000000" />
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="430.669800" srcBoundRect_Y="153.377396" srcOffset_X="2.000000" srcOffset_Y="-26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="510.330200" tarBoundRect_Y="237.622604" tarOffset_X="11.000000" tarOffset_Y="-11.000000" />
         </line>
     </lines>
     <shapes />
     <txttips>
-        <txttip left="403" top="57" right="490" bottom="74" content="DHCP-扼快把志快把" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="277" top="324" right="364" bottom="341" content="DHCP-抗抖我快扶找" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="541" top="323" right="628" bottom="340" content="DHCP-抗抖我快扶找" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="310" top="104" right="405" bottom="121" content="10.0.12.2 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="495" top="108" right="590" bottom="125" content="10.0.23.2 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="362" top="51" right="471" bottom="72" content="DHCP-扼快把志快把" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="236" top="318" right="345" bottom="339" content="DHCP-抗抖我快扶找" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="500" top="317" right="609" bottom="338" content="DHCP-抗抖我快扶找" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="235" top="97" right="353" bottom="118" content="10.0.12.2 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="454" top="102" right="572" bottom="123" content="10.0.23.2 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="113" top="225" right="250" bottom="246" content="10.0.12.254 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="592" top="250" right="710" bottom="271" content="10.0.23.3 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
     </txttips>
 </topo>

@@ -38,7 +38,7 @@
     </lines>
     <shapes />
     <txttips>
-        <txttip left="285" top="411" right="440" bottom="443" content="IP: 192.168.2.1/24&#x0D;&#x0A;GW: 192.168.2.254/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="643" top="406" right="798" bottom="438" content="IP: 192.168.3.1/24&#x0D;&#x0A;GW: 192.168.3.254/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="285" top="411" right="479" bottom="452" content="IP: 192.168.2.1/24&#x0D;&#x0A;GW: 192.168.2.254/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="643" top="406" right="837" bottom="447" content="IP: 192.168.3.1/24&#x0D;&#x0A;GW: 192.168.3.254/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
     </txttips>
 </topo>

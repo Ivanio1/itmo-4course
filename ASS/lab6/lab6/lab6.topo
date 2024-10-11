@@ -26,12 +26,6 @@
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
-        <dev id="93CC9AEE-DFD6-4c08-B72E-8F064C1B4086" name="STA2" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-B2-31-B4  -simsta_check 0 " system_mac="54-89-98-B2-31-B4" com_port="0" bootmode="0" cx="252.000000" cy="585.000000" edit_left="279" edit_top="639">
-            <slot number="slot17" isMainBoard="1" />
-        </dev>
-        <dev id="08D501B2-9828-45b0-BF1B-D90588D445A8" name="Cellphone1" poe="0" model="Cellphone" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-17-0F-15  -simsta_check 0 " system_mac="54-89-98-17-0F-15" com_port="0" bootmode="0" cx="411.000000" cy="552.000000" edit_left="438" edit_top="606">
-            <slot number="slot17" isMainBoard="1" />
-        </dev>
         <dev id="F85A273E-B535-4f96-B161-9AE3667F6F4D" name="STA3" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-D4-34-95  -simsta_check 0 " system_mac="54-89-98-D4-34-95" com_port="0" bootmode="0" cx="585.000000" cy="445.000000" edit_left="612" edit_top="499">
             <slot number="slot17" isMainBoard="1" />
         </dev>
@@ -45,6 +39,12 @@
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
+        </dev>
+        <dev id="08D501B2-9828-45b0-BF1B-D90588D445A8" name="Cellphone1" poe="0" model="Cellphone" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-17-0F-15  -simsta_check 0 " system_mac="54-89-98-17-0F-15" com_port="0" bootmode="0" cx="411.000000" cy="552.000000" edit_left="438" edit_top="606">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="93CC9AEE-DFD6-4c08-B72E-8F064C1B4086" name="STA2" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-B2-31-B4  -simsta_check 0 " system_mac="54-89-98-B2-31-B4" com_port="0" bootmode="0" cx="252.000000" cy="585.000000" edit_left="279" edit_top="639">
+            <slot number="slot17" isMainBoard="1" />
         </dev>
         <dev id="C4872BCA-673A-42a5-939B-131429249968" name="STA1" poe="0" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-26-04-4E  -simsta_check 0 " system_mac="54-89-98-26-04-4E" com_port="0" bootmode="0" cx="197.000000" cy="474.000000" edit_left="224" edit_top="528">
             <slot number="slot17" isMainBoard="1" />
@@ -70,5 +70,8 @@
     <shapes>
         <shape type="2" filloption="1" color="16744576" upleftcorner="318,441" width="1" height="0" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
     </shapes>
-    <txttips />
+    <txttips>
+        <txttip left="160" top="88" right="307" bottom="109" content="192.168.100.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="602" top="79" right="786" bottom="120" content="192.168.101.254 24&#x0D;&#x0A;10.0.1.1 32" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
 </topo>
