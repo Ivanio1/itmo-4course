@@ -5,7 +5,6 @@ from transformer import find_opposites, rotate_key_90, rotate_key_180, rotate_ke
 
 def encrypt_message(text: str) -> Tuple[str, str]:
     square_len = nearest_square_greater_than(len(text))
-    print(len(text))
     padded_text = text.ljust(square_len ** 2)
     square = [i for i in range(square_len ** 2)]
     key = []

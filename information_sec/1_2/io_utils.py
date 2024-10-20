@@ -9,7 +9,7 @@ def print_red(message: str) -> None:
     print(f"\033[91m{message}\033[0m")
 
 
-"""Функция чтения ключа из консоли"""
+"""Функция чтения имени файла с открытым текстом из консоли"""
 def read_filename() -> Optional[str]:
     try:
         filename = input("Введите названия файла с текстом для шифрования: ")

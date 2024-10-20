@@ -1,5 +1,5 @@
 import os
-from RC6 import rc6_ofb_encrypt, rc6_ofb_decrypt
+from OFB import rc6_ofb_encrypt, rc6_ofb_decrypt
 from io_utils import decide_action, ENCRYPT_ACTION, DECRYPT_ACTION, read_filename, print_red
 
 key = b'SuperSecretKey123'
@@ -7,9 +7,9 @@ encrypted_file = 'encrypted.bin'
 decrypted_file = 'decrypted.txt'
 
 
+"""Функция для чтения и шифрования открытого текста"""
 def encrypt_file(symmetric_key, input_file, output_file):
     global iv
-
     try:
         iv = generate_iv()
 
@@ -31,7 +31,7 @@ def encrypt_file(symmetric_key, input_file, output_file):
     except Exception as e:
         print_red(f"Произошла непредвиденная ошибка: {e}")
 
-
+"""Функция для расшифрования зашифрованного текста и записи результата"""
 def decrypt_file(symmetric_key, input_file, output_file):
     global iv
 
@@ -58,7 +58,7 @@ def decrypt_file(symmetric_key, input_file, output_file):
     except Exception as e:
         print_red(f"Произошла непредвиденная ошибка: {e}")
 
-
+"""Функция для генерации вектора инициализации"""
 def generate_iv():
     return os.urandom(16)
 
