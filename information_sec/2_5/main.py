@@ -1,8 +1,8 @@
 import sys
-import yaml
 
 import alphabet
 from curve import Curve
+from io_utils import print_red, read_config, print_separator
 from point import Point
 
 
@@ -10,7 +10,7 @@ def main():
     curve = Curve(-1, 1, 751)
     g = Point(0, 1)
     if len(sys.argv) < 2:
-        print("You must specify the input file path!")
+        print_red("Укажите название файла с параметрами!")
         return
 
     input_file = None
@@ -18,39 +18,31 @@ def main():
         if sys.argv[i] == '-f' and i + 1 < len(sys.argv):
             input_file = sys.argv[i + 1]
 
-    if input_file is None:
-        print("You must specify the input file path!")
-        return
-
-    # --- Parsing input yaml-file ---------------------
-    with open(input_file, 'r') as file:
-        file_contents = file.read()
-
-    doc = yaml.safe_load(file_contents)
+    doc = read_config(input_file)
     bx = doc['Bx']
     by = doc['By']
     pb = Point(bx, by)
     text = doc['T']
-    print(f"Pb = {pb}, Message: {text}")
+    print(f"Pb = {pb}, Сообщение: {text}")
 
     k = [int(c_k) for c_k in doc['k']]
 
     res = []
-    print("-------------------------------------------------")
+    print_separator()
     for i, c in enumerate(text):
-        a_pm = alphabet.ALPHABET[c]  # get the corresponding point for symbol
+        a_pm = alphabet.ALPHABET[c]
         pm = Point(a_pm.x, a_pm.y)
-        c_k = k[i]  # get k for current symbol
-        kg = curve.elliptic_mul(g, c_k)  # kG = k * G
-        kpb = curve.elliptic_mul(pb, c_k)  # kPb = k * Pb
-        pmkpb = curve.elliptic_add(kpb, pm)  # Pm + kPb
-        print(f"Symbol: '{c}'; k = {c_k}; Pm = {pm}; kPb = {kpb}")
+        c_k = k[i]
+        kg = curve.elliptic_mul(g, c_k)
+        kpb = curve.elliptic_mul(pb, c_k)
+        pmkpb = curve.elliptic_add(kpb, pm)
+        print(f"Исходный символ: '{c}'; k = {c_k}; Pm = {pm}; kPb = {kpb}")
         print(f"Cm = (kG, Pm+kPb) = ({kg}, {pmkpb})")
-        print("-------------------------------------------------")
+        print_separator()
         res.append(kg)
         res.append(pmkpb)
 
-    print(f"Encrypted message: {res}")
+    print(f"Зашифрованное сообщение: {res}")
 
 
 if __name__ == "__main__":
