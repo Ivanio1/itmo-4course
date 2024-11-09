@@ -42,7 +42,8 @@ def main():
         res.append(kg)
         res.append(pmkpb)
 
-    print(f"Зашифрованное сообщение: {res}")
+    print(f"Зашифрованное сообщение: ")
+    print(res,  sep='\n')
 
 
 if __name__ == "__main__":
